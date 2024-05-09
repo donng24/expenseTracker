@@ -10,7 +10,7 @@ const Login = () => {
     try {
       await auth.signInWithEmailAndPassword(email, password);
     } catch (error) {
-      console.error("Error signing in:", error.message);
+      console.error("Error signing in, Please try again!:", error.message);
     }
   };
 
